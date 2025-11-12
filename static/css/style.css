@@ -16,8 +16,9 @@ body {
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+    height: var(--tg-viewport-height);
+    /*max-width: 800px;
+    margin: 0 auto;*/
 }
 
 .header {
