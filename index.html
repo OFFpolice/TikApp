@@ -4,87 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>TikTokMediaSave</title>
-    <link rel="stylesheet" href="./static/css/style.css?v=1.0">
+    <link rel="stylesheet" href="./static/css/style.css?v=1.1">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <script src="https://telegram.org/js/telegram-web-app.js?59"></script>
 </head>
 
 <body class="loading">
 
-  <!-- === Preloader === -->
+  <!-- Preloader -->
   <div id="preloader">
     <div class="spinner"></div>
   </div>
 
-    <div class="container">
-        <div class="header">
-            <h1><i class="fab fa-tiktok"></i> TikTok</h1>
-            <p class="subtitle">Media Save Bot</p>
-        </div>
+  <div class="container">
+      <div class="header">
+          <h1><i class="fab fa-tiktok"></i> TikTok</h1>
+          <p class="subtitle">Media Save Bot</p>
+      </div>
 
-        <div class="card">
-            <form id="downloadForm" class="form">
-                <div class="input-group">
-                    <input type="url" id="urlInput" placeholder="Введите ссылку на медиа из TikTok..." required />
-                    <button type="submit" id="downloadBtn">
-                        <i class="fas fa-download"></i> Скачать
-                    </button>
-                </div>
-            </form>
+      <div class="card">
+          <form id="downloadForm" class="form">
+              <div class="input-group">
+                  <input type="url" id="urlInput" placeholder="Введите ссылку на медиа из TikTok..." required />
+                  <button type="submit" id="downloadBtn">
+                      <i class="fas fa-download"></i> Скачать
+                  </button>
+              </div>
+          </form>
 
-            <div id="loading" class="loading hidden">
-                <div class="spinner"></div>
-                <p>Загрузка...</p>
-            </div>
+          <div id="loading" class="loading hidden">
+              <div class="spinner"></div>
+              <p>Загрузка...</p>
+          </div>
 
-            <div id="result" class="result hidden">
-                <div class="video-info">
-                    <div class="media-container" id="mediaContainer"></div>
-                    <h3 id="videoTitle">Описание</h3>
-                    <div class="actions">
-                        <a id="downloadLink" class="download-btn" download>
-                            <i class="fas fa-download"></i> Скачать
-                        </a>
-                    </div>
-                </div>
-            </div>
+          <div id="result" class="result hidden">
+              <div class="video-info">
+                  <div class="media-container" id="mediaContainer"></div>
+                  <h3 id="videoTitle">Описание</h3>
+                  <div class="actions">
+                      <a id="downloadLink" class="download-btn" download>
+                          <i class="fas fa-download"></i> Скачать
+                      </a>
+                  </div>
+              </div>
+          </div>
 
-            <div id="error" class="error hidden">
-                <i class="fas fa-exclamation-triangle"></i>
-                <p id="errorMessage"></p>
-            </div>
-        </div>
-    </div>
-    <!-- JS -->
-    <script>
-      window.addEventListener("load", () => {
-        document.body.classList.remove("loading");
+          <div id="error" class="error hidden">
+              <i class="fas fa-exclamation-triangle"></i>
+              <p id="errorMessage"></p>
+          </div>
+      </div>
+  </div>
 
-        if (window.Telegram && window.Telegram.WebApp) {
-          const tg = window.Telegram.WebApp;
-
-          tg.ready();
-          //tg.expand();
-          tg.enableClosingConfirmation();
-          tg.disableVerticalSwipes();
-          tg.requestFullscreen();
-          tg.lockOrientation();
-
-          console.log("Telegram WebApp is ready:", tg.initData);
-        } else {
-          console.warn("Telegram WebApp not found.");
-        }
-      });
-    </script>
-    <!-- Конфигурация API -->
-    <script>
-        window.APP_CONFIG = {
-            API_URL_V1: 'https://api.douyin.wtf/api/hybrid/video_data?url={url}&minimal=false',
-            API_URL_V2: 'https://tikwm.com/api/?url={url}'
-        };
-    </script>
-    <!-- Script -->
-    <script src="./static/js/script.js"></script>
-
+  <!-- JS -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="./static/js/tg.js"></script>
+  <script src="./static/js/config.js"></script>
+  <script src="./static/js/downloader.js"></script>
 </body>
 </html>
