@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>TikTokMediaSaveBot</title>
-    <link rel="stylesheet" href="./static/css/style.css?v=1.0" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./static/css/style.css?v=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body class="loading">
@@ -54,17 +54,7 @@
             </div>
         </div>
     </div>
-
-    <!-- Конфигурация API -->
-    <script>
-        window.APP_CONFIG = {
-            API_URL_V1: 'https://api.douyin.wtf/api/hybrid/video_data?url={url}&minimal=false',
-            API_URL_V2: 'https://tikwm.com/api/?url={url}'
-        };
-    </script>
-
-    <script src="./static/js/script.js"></script>
-
+    <!-- JS -->
     <script>
       window.addEventListener("load", () => {
         document.body.classList.remove("loading");
@@ -85,6 +75,15 @@
         }
       });
     </script>
+    <!-- Конфигурация API -->
+    <script>
+        window.APP_CONFIG = {
+            API_URL_V1: 'https://api.douyin.wtf/api/hybrid/video_data?url={url}&minimal=false',
+            API_URL_V2: 'https://tikwm.com/api/?url={url}'
+        };
+    </script>
+    <!-- Script -->
+    <script src="./static/js/script.js"></script>
 
 </body>
 </html>
