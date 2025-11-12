@@ -65,26 +65,26 @@
 
     <script src="./static/js/script.js"></script>
 
-  <script>
-    window.addEventListener("load", () => {
-      document.body.classList.remove("loading");
+    <script>
+      window.addEventListener("load", () => {
+        document.body.classList.remove("loading");
 
-      if (window.Telegram && window.Telegram.WebApp) {
-        const tg = window.Telegram.WebApp;
+        if (window.Telegram && window.Telegram.WebApp) {
+          const tg = window.Telegram.WebApp;
 
-        tg.ready();
-        tg.expand();
-        tg.enableClosingConfirmation();
-        tg.disableVerticalSwipes();
-        tg.requestFullscreen();
-        tg.lockOrientation();
+          tg.ready();
+          tg.expand();
+          tg.enableClosingConfirmation();
+          tg.disableVerticalSwipes();
+          tg.requestFullscreen();
+          tg.lockOrientation();
 
-        console.log("Telegram WebApp is ready:", tg.initData);
-      } else {
-        console.warn("Telegram WebApp not found.");
-      }
-    });
-  </script>
+          console.log("Telegram WebApp is ready:", tg.initData);
+        } else {
+          console.warn("Telegram WebApp not found.");
+        }
+      });
+    </script>
 
 </body>
 </html>
