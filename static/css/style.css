@@ -16,10 +16,8 @@ body {
 }
 
 .container {
-    /*height: var(--tg-viewport-height);*/
-    height: var(--tg-safe-area-inset-top/bottom/left/right);
-    /*max-width: 800px;
-    margin: 0 auto;*/
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .header {
