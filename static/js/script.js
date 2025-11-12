@@ -1,4 +1,4 @@
-// static/js/script.js
+// .static/js/script.js
 
 class TikTokDownloader {
     constructor(config) {
