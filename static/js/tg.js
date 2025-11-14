@@ -1,5 +1,4 @@
 window.addEventListener("load", () => {
-  document.body.classList.remove("loading");
 
   if (window.Telegram && window.Telegram.WebApp) {
     const tg = window.Telegram.WebApp;
