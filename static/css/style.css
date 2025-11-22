@@ -1,6 +1,11 @@
+:root {
+    --tg-viewport-height: 100vh;
+}
+
 html {
   scroll-behavior: smooth;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +15,7 @@ html {
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #000;
-    min-height: 100vh;
+    min-height: var(--tg-viewport-height);
     padding: 20px;
     color: #f1f1f1;
 }
