@@ -16,7 +16,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #000;
     min-height: var(--tg-viewport-height);
-    padding: 20px;
+    padding: 30px;
     color: #f1f1f1;
 }
 
