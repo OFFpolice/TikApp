@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
     tg.expand();
     tg.enableClosingConfirmation();
     tg.disableVerticalSwipes();
-    tg.requestFullscreen();
+    //tg.requestFullscreen();
     tg.lockOrientation();
 
     console.log("Telegram WebApp is ready:", tg.initData);
