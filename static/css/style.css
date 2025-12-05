@@ -231,3 +231,19 @@ button:disabled {
         padding: 20px;
     }
 }
+
+footer {
+  margin-top: 25px;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.footer-link {
+  color: #e50914;
+  text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  text-decoration: none;
+}
