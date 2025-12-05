@@ -158,7 +158,7 @@ class TikTokDownloader {
             this.downloadLink.textContent = '';    
             const icon = document.createElement('i'); icon.className = 'fas fa-download';    
             this.downloadLink.appendChild(icon);    
-            const txt = document.createTextNode(' Скачать видео');    
+            const txt = document.createTextNode(' Download video');    
             this.downloadLink.appendChild(txt);    
         } else if (data.images && data.images.length > 0) {    
             const gallery = document.createElement('div');    
@@ -182,7 +182,7 @@ class TikTokDownloader {
                 this.downloadLink.textContent = '';    
                 const icon = document.createElement('i'); icon.className = 'fas fa-download';    
                 this.downloadLink.appendChild(icon);    
-                const txt = document.createTextNode(' Скачать изображение');    
+                const txt = document.createTextNode(' Download images');    
                 this.downloadLink.appendChild(txt);    
                 this.downloadLink.style.display = 'inline-flex';    
             } else {    
