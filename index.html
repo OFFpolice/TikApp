@@ -6,7 +6,7 @@
     <title>TikTokMediaSave</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="./static/css/style.css?v=0.0.0.3">
+    <link rel="stylesheet" href="./static/css/style.css?v=0.0.0.2">
 
     <!-- Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -24,10 +24,10 @@
             <p class="subtitle">Media Save Bot</p>
         </div>
 
-        <!-- Main Card -->
+        <!-- Card -->
         <div class="card">
 
-            <!-- Input Form -->
+            <!-- Input -->
             <form id="downloadForm" class="form">
                 <div class="input-group">
                     <input 
@@ -53,7 +53,6 @@
                 <div class="video-info">
                     <div class="media-container" id="mediaContainer"></div>
                     <h3 id="videoTitle">Title</h3>
-
                     <div class="actions">
                         <a id="downloadLink" class="download-btn" download>
                             <i class="fas fa-download"></i> Download
@@ -68,19 +67,19 @@
                 <p id="errorMessage"></p>
             </div>
 
-        </div>
+            <!-- Footer inside card -->
+            <footer class="footer">
+                <p>© 2025 Powered by 
+                    <a href="https://telegram.me/OFFpolice"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="footer-link">@OFFpolice</a>
+                </p>
+            </footer>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p>© 2025 Powered by 
-                <a href="https://telegram.me/OFFpolice" 
-                   target="_blank" 
-                   rel="noopener noreferrer" 
-                   class="footer-link">@OFFpolice</a>
-            </p>
-        </footer>
+        </div> <!-- end card -->
 
-    </div>
+    </div> <!-- end container -->
 
     <!-- JS -->
     <script src="./static/js/tg.js"></script>
