@@ -14,14 +14,14 @@ body {
     min-height: 100vh;
 
     display: flex;
-    justify-content: center;      /* центр по горизонтали */
-    align-items: center;          /* центр по вертикали */
+    justify-content: center;
+    align-items: center;
 
-    padding: 20px;                /* небольшой внешний отступ */
+    padding: 20px;
     color: #f1f1f1;
 }
 
-/* Контейнер полностью центрируется */
+
 .container {
     width: 100%;
     max-width: 800px;
@@ -31,7 +31,6 @@ body {
     align-items: center;
 }
 
-/* ==================== CARD ==================== */
 
 .card {
     width: 100%;
@@ -42,8 +41,6 @@ body {
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
 }
-
-/* ==================== HEADER ==================== */
 
 .card .header {
     text-align: center;
@@ -64,7 +61,6 @@ body {
     color: rgba(255,255,255,0.9);
 }
 
-/* ==================== FORM ==================== */
 
 .form {
     margin-top: 20px;
@@ -122,7 +118,6 @@ button:disabled {
     transform: none;
 }
 
-/* ==================== LOADING ==================== */
 
 .loading {
     text-align: center;
@@ -144,7 +139,6 @@ button:disabled {
     to   { transform: rotate(360deg); }
 }
 
-/* ==================== RESULT ==================== */
 
 .result {
     animation: fadeIn 0.38s ease;
@@ -182,7 +176,6 @@ button:disabled {
     border: 1px solid #222;
 }
 
-/* ==================== ACTIONS ==================== */
 
 .actions {
     margin-top: 18px;
@@ -210,7 +203,6 @@ button:disabled {
     box-shadow: 0 6px 18px rgba(76, 175, 80, 0.18);
 }
 
-/* ==================== ERROR ==================== */
 
 .error {
     background: #1b0006;
@@ -221,7 +213,6 @@ button:disabled {
     border: 1px solid #601010;
 }
 
-/* ==================== FEATURES ==================== */
 
 .features {
     display: grid;
@@ -245,20 +236,17 @@ button:disabled {
     color: #764ba2;
 }
 
-/* ==================== HELPERS ==================== */
 
 .hidden {
     display: none !important;
 }
 
-/* ==================== ANIMATION ==================== */
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ==================== RESPONSIVE ==================== */
 
 @media (max-width: 768px) {
     .input-group {
@@ -278,7 +266,6 @@ button:disabled {
     }
 }
 
-/* ==================== FOOTER ==================== */
 
 footer {
     margin-top: 18px;
