@@ -4,10 +4,10 @@ window.addEventListener("load", () => {
     const tg = window.Telegram.WebApp;
 
     tg.ready();
-    tg.expand();
+    //tg.expand();
     tg.enableClosingConfirmation();
     tg.disableVerticalSwipes();
-    //tg.requestFullscreen();
+    tg.requestFullscreen();
     tg.lockOrientation();
 
     console.log("Telegram WebApp is ready:", tg.initData);
