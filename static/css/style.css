@@ -11,7 +11,8 @@ html {
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #000;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
+    min-height: var(--tg-viewport-stable-height);
     padding: 20px;
     color: #f1f1f1;
 }
