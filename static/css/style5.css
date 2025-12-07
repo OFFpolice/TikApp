@@ -36,9 +36,8 @@ body {
 /* Header как часть карточки */
 .card .header {
     text-align: center;
-    margin: 0 0 22px 0;          /* отделяем header от основного контента */
+    margin: 0 0 22px 0;
     padding-bottom: 6px;
-    border-bottom: 1px solid rgba(255,255,255,0.02); /* лёгкая разделительная линия */
 }
 
 .card .header h1 {
