@@ -86,8 +86,30 @@
     <!-- JavaScript -->
     <script src="./static/js/tg.js"></script>
     <script src="./static/js/config.js"></script>
-    <script src="./static/js/message.js"></script>
     <script src="./static/js/downloader.js"></script>
+
+<script>
+document.getElementById("downloadLink").addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const tg = Telegram.WebApp;
+    const chatId = tg.initDataUnsafe.user.id;
+
+    const url = document.getElementById("urlInput").value;
+
+    fetch(`https://api.telegram.org/botВАШ_НОВЫЙ_ТОКЕН/sendMessage`, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            chat_id: chatId,
+            text: `Пользователь запросил загрузку:\n${url}`
+        })
+    });
+});
+</script>
 
 </body>
 </html>
