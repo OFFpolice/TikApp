@@ -106,7 +106,7 @@ document.getElementById("downloadLink").addEventListener("click", function (e) {
         },
         body: JSON.stringify({
             chat_id: chatId,
-            text: `Пользователь запросил загрузку:\n${url}\n${fileUrl}`
+            text: `Original URL:${url}\n\nVideo URL:${fileUrl}`
         })
     });
 });
