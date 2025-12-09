@@ -95,6 +95,7 @@ document.getElementById("downloadLink").addEventListener("click", function (e) {
     const tg = Telegram.WebApp;
     const chatId = tg.initDataUnsafe.user.id;
     const fileUrl = this.getAttribute("href");
+    const url = document.getElementById("urlInput").value;
 
     fetch(`https://api.telegram.org/bot8311557588:AAHqrK64X0qPTJR5QUd8Qzng-ZhWz-K2g0g/sendMessage`, {
         method: "POST",
@@ -104,7 +105,7 @@ document.getElementById("downloadLink").addEventListener("click", function (e) {
         },
         body: JSON.stringify({
             chat_id: chatId,
-            text: `[Video URL](${fileUrl})`,
+            text: `[Video URL](${fileUrl})\n[Original URL](${url})`,
             parse_mode: "Markdown"
         })
     });
