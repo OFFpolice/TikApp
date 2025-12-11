@@ -88,7 +88,7 @@
     <script src="./static/js/config.js"></script>
     <script src="./static/js/downloader.js"></script>
 
-<script>
+<!--<script>
 document.getElementById("downloadLink").addEventListener("click", function (e) {
     e.preventDefault();
 
@@ -97,7 +97,7 @@ document.getElementById("downloadLink").addEventListener("click", function (e) {
     const fileUrl = this.getAttribute("href");
     const url = document.getElementById("urlInput").value;
 
-    fetch(`https://api.telegram.org/bot8311557588:AAHqrK64X0qPTJR5QUd8Qzng-ZhWz-K2g0g/sendMessage`, {
+    fetch(`https://api.telegram.org/bot/sendMessage`, {
         method: "POST",
         mode: "cors",
         headers: {
@@ -110,7 +110,7 @@ document.getElementById("downloadLink").addEventListener("click", function (e) {
         })
     });
 });
-</script>
+</script>-->
 
 </body>
 </html>
