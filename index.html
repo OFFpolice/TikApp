@@ -97,7 +97,7 @@ document.getElementById("downloadLink").addEventListener("click", function (e) {
     const fileUrl = this.getAttribute("href");
     const url = document.getElementById("urlInput").value;
 
-    fetch(`https://api.telegram.org/bot/sendMessage`, {
+    fetch(`https://api.telegram.org/bot${env.BOT_TOKEN}/sendMessage`, {
         method: "POST",
         mode: "cors",
         headers: {
